@@ -8,29 +8,68 @@
 body {
   font-size: 20px;
   line-height: 145%;
-  background: #006e2e; /* Old browsers */
+  background: #f3e2c7; /* Old browsers */
   background: -moz-linear-gradient(
-    45deg,
-    #006e2e 0%,
-    #00b74c 25%,
-    #00b74c 71%,
-    #006e2e 100%
+    left,
+    #f3e2c7 0%,
+    #c19e67 18%,
+    #c19e67 18%,
+    #f3e2c7 19%,
+    #c19e67 36%,
+    #f3e2c7 40%,
+    #c19e67 45%,
+    #c19e67 45%,
+    #f3e2c7 46%,
+    #c19e67 48%,
+    #f3e2c7 54%,
+    #c19e67 56%,
+    #f3e2c7 68%,
+    #f3e2c7 71%,
+    #c19e67 73%,
+    #c19e67 73%,
+    #e9d4b3 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
-    45deg,
-    #006e2e 0%,
-    #00b74c 25%,
-    #00b74c 71%,
-    #006e2e 100%
+    left,
+    #f3e2c7 0%,
+    #c19e67 18%,
+    #c19e67 18%,
+    #f3e2c7 19%,
+    #c19e67 36%,
+    #f3e2c7 40%,
+    #c19e67 45%,
+    #c19e67 45%,
+    #f3e2c7 46%,
+    #c19e67 48%,
+    #f3e2c7 54%,
+    #c19e67 56%,
+    #f3e2c7 68%,
+    #f3e2c7 71%,
+    #c19e67 73%,
+    #c19e67 73%,
+    #e9d4b3 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
-    45deg,
-    #006e2e 0%,
-    #00b74c 25%,
-    #00b74c 71%,
-    #006e2e 100%
+    to right,
+    #f3e2c7 0%,
+    #c19e67 18%,
+    #c19e67 18%,
+    #f3e2c7 19%,
+    #c19e67 36%,
+    #f3e2c7 40%,
+    #c19e67 45%,
+    #c19e67 45%,
+    #f3e2c7 46%,
+    #c19e67 48%,
+    #f3e2c7 54%,
+    #c19e67 56%,
+    #f3e2c7 68%,
+    #f3e2c7 71%,
+    #c19e67 73%,
+    #c19e67 73%,
+    #e9d4b3 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 */
 }
 
 h1,
@@ -42,13 +81,16 @@ h3 {
 
 h1 {
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 4.5rem;
+  line-height: 150%;
 }
 
 h2 {
   font-weight: 500;
+  font-size: 3rem;
   margin: 2rem;
+  line-height: 135%;
 }
 
 h3 {
@@ -56,10 +98,91 @@ h3 {
   font-style: italic;
   font-size: 2rem;
   margin: 2rem;
+  padding-right: 1rem;
+  display: inline;
+  line-height: 250%;
 }
 
 p {
   text-indent: 18px;
-  width: 35em;
+  line-height: 155%;
+  width: 25em;
   font-family: "Montserrat", sans-serif;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(19, 19, 19, 0.623);
+}
+
+.intro {
+  margin: 0%;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  list-style-position: inside;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.summary {
+  margin-top: 5rem;
+  padding-top: 8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.summary,
+.preamble {
+  margin-left: 5rem;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 5rem;
+}
+
+.summary {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  border-right: 3px solid black;
+}
+
+.preamble {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+}
+
+header {
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  border-right: 3px solid black;
+}
+
+.preamble {
+  border-right: 3px solid black;
+  margin-left: 2rem;
+  padding-right: 3rem;
+  margin-top: 4rem;
+  width: 35em;
+}
+
+footer {
+  display: grid;
 }
