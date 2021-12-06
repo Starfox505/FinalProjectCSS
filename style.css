@@ -1,4 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Roboto+Condensed&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 20px;
+  background: #cb60b3; /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #cb60b3 0%,
+    #ca74f2 14%,
+    #ca74f2 14%,
+    #6ccbe2 28%,
+    #c146a1 50%,
+    #a80077 51%,
+    #ca74f2 72%,
+    #db36a4 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #cb60b3 0%,
+    #ca74f2 14%,
+    #ca74f2 14%,
+    #6ccbe2 28%,
+    #c146a1 50%,
+    #a80077 51%,
+    #ca74f2 72%,
+    #db36a4 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #cb60b3 0%,
+    #ca74f2 14%,
+    #ca74f2 14%,
+    #6ccbe2 28%,
+    #c146a1 50%,
+    #a80077 51%,
+    #ca74f2 72%,
+    #db36a4 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p {
 }
