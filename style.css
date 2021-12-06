@@ -44,14 +44,41 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Open Sans Condensed" sans-serif;
+}
+
 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 145%;
+  word-spacing: 18px;
 }
 
 h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 145%;
+  word-spacing: 18px;
 }
 
 h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 145%;
+  word-spacing: 18px;
 }
 
 p {
+  font-family: "Roboto Condensed" sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
