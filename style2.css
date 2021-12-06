@@ -7,7 +7,6 @@
 
 body {
   font-size: 20px;
-  line-height: 145%;
   background: #f3e2c7; /* Old browsers */
   background: -moz-linear-gradient(
     left,
@@ -82,7 +81,7 @@ h3 {
 h1 {
   font-weight: 700;
   font-size: 8rem;
-  margin: 4.5rem;
+  margin: 2.5rem;
   line-height: 150%;
 }
 
@@ -110,10 +109,11 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+header {
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  border-right: 3px solid black;
+  height: 50%;
 }
 
 a {
@@ -121,32 +121,60 @@ a {
   color: rgba(19, 19, 19, 0.623);
 }
 
-.intro {
-  margin: 0%;
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.design-selection,
-.design-archives,
-.zen-resources {
-  margin-right: 10rem;
-  margin-left: 10rem;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
-  list-style-position: inside;
-  text-align: center;
-  border: 3px solid black;
+.intro {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  height: auto;
 }
 
 .summary {
-  margin-top: 5rem;
-  padding-top: 8rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  border-right: 3px solid black;
+  padding-top: 3rem;
+}
+
+.preamble {
+  border-right: 3px solid black;
+  margin-top: 7rem;
+  width: 35em;
 }
 
 .summary,
 .preamble {
   margin-left: 5rem;
+}
+
+#zen-supporting {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  margin-right: 13rem;
+  padding-bottom: 2rem;
+  list-style-position: inside;
+  text-align: center;
+  align-items: center;
+  border: 3px solid black;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-right: 17rem;
+  margin-left: 13rem;
+  text-align: center;
+  border: 3px solid black;
 }
 
 .explanation,
@@ -156,33 +184,4 @@ a {
   padding-top: 3rem;
   padding-right: 3rem;
   padding-left: 5rem;
-}
-
-.summary {
-  padding-left: 5rem;
-  padding-bottom: 5rem;
-  border-right: 3px solid black;
-}
-
-.preamble {
-  padding-left: 5rem;
-  padding-bottom: 5rem;
-}
-
-header {
-  padding-bottom: 1rem;
-  margin-top: 4rem;
-  border-right: 3px solid black;
-}
-
-.preamble {
-  border-right: 3px solid black;
-  margin-left: 2rem;
-  padding-right: 3rem;
-  margin-top: 4rem;
-  width: 35em;
-}
-
-footer {
-  display: grid;
 }
