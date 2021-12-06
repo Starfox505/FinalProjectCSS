@@ -128,8 +128,8 @@ a {
 
 .intro {
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  height: auto;
+  grid-template-columns: 1fr;
+  height: 50%;
 }
 
 .summary {
@@ -151,6 +151,16 @@ a {
 #zen-supporting {
   display: grid;
   grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 5rem;
 }
 
 .design-selection,
@@ -175,13 +185,4 @@ footer {
   margin-left: 13rem;
   text-align: center;
   border: 3px solid black;
-}
-
-.explanation,
-.participation,
-.benefits,
-.requirements {
-  padding-top: 3rem;
-  padding-right: 3rem;
-  padding-left: 5rem;
 }
