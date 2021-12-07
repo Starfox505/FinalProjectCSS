@@ -48,10 +48,11 @@ h1,
 h2,
 h3 {
   font-family: "Open Sans Condensed" sans-serif;
+  color: rgb(96, 170, 255);
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
   line-height: 145%;
   word-spacing: 18px;
@@ -60,12 +61,13 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 145%;
+  line-height: 150%;
   word-spacing: 18px;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2.5rem;
+  margin: 1rem;
   font-weight: 700;
   line-height: 145%;
   word-spacing: 18px;
@@ -74,11 +76,88 @@ h3 {
 p {
   font-family: "Roboto Condensed" sans-serif;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 155%;
+  color: rgb(37, 6, 88);
+  text-indent: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(141, 0, 0);
 }
 
 .intro {
   display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  padding: 3rem;
+  margin: 6rem;
+  border: 10px double rgb(108, 44, 255);
+  background-color: #1e5799; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #1e5799 0%,
+    #c62bdb 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #d82bc4 67%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #1e5799 0%,
+    #c62bdb 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #d82bc4 67%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #1e5799 0%,
+    #c62bdb 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #d82bc4 67%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.summary {
+  padding-top: 9rem;
+  width: 30em;
+}
+
+.preamble {
+  padding-top: 2rem;
+}
+
+#zen-supporting {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px;
+  margin: 8rem;
+  width: 45em;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  padding-left: 14rem;
+  padding-right: 10rem;
+  border: 10px double rgb(108, 44, 255);
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  display: grid;
+  grid-template-columns: 3 span;
+  grid-template-rows: 1fr;
 }
