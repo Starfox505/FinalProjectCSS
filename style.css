@@ -86,13 +86,8 @@ a {
   color: rgb(141, 0, 0);
 }
 
-.intro {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  padding: 3rem;
-  margin: 6rem;
-  border: 10px double rgb(108, 44, 255);
+.intro,
+#zen-supporting {
   background-color: #1e5799; /* Old browsers */
   background: -moz-radial-gradient(
     center,
@@ -126,13 +121,63 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.intro {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+  margin: 6rem;
+  border: 10px double rgb(108, 44, 255);
+}
+
 .summary {
-  padding-top: 9rem;
+  padding-top: 10rem;
   width: 30em;
 }
 
 .preamble {
   padding-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  border: 9px double rgb(108, 44, 255);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  background: #7db9de; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #7db9de 0%,
+    #e732ff 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #ff32ee 67%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #7db9de 0%,
+    #e732ff 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #ff32ee 67%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #7db9de 0%,
+    #e732ff 27%,
+    #2989d8 50%,
+    #207cca 51%,
+    #ff32ee 67%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9de', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #zen-supporting {
@@ -148,16 +193,7 @@ a {
   border: 10px double rgb(108, 44, 255);
 }
 
-.explanation,
-.participation,
-.benefits,
-.requirements {
-}
-
-.design-selection,
-.design-archives,
-.zen-resources {
+.wrapper {
   display: grid;
-  grid-template-columns: 3 span;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
